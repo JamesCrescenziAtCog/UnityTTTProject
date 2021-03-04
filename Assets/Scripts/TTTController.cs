@@ -49,7 +49,7 @@ public class TTTController : MonoBehaviour
         Debug.Log(response.IsSuccessStatusCode);
 
         Debug.Log("Call Data: " + dtTest);
-        DataModel rvRaw = Newtonsoft.Json.JsonConvert.DeserializeObject<DataModel>(dtTest);
+        DataModel rv = Newtonsoft.Json.JsonConvert.DeserializeObject<DataModel>(dtTest);
 
        // DataModel rv = new DataModel {board=rvRaw.board, };
 
@@ -57,7 +57,7 @@ public class TTTController : MonoBehaviour
 
         //Debug.Log(rv.board);
 
-        return rvRaw;
+        return rv;
 
 
 
